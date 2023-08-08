@@ -2,12 +2,20 @@ const subtrair = document.querySelector("#subtrair")
 const somar = document.querySelector('#somar')
 const braco = document.querySelector ('#braco')
 
+const controle = document.querySelectorAll(".controle-ajuste")
+
+controle.forEach ( (elemento) => {
+    elemento.addEventListener("click", (evento) => {
+        console.log(evento.target)
+    })
+})
+
+
 somar.addEventListener("click", () => {manipulaDados("somar") })
 
 subtrair.addEventListener('click', () => {manipulaDados("subtrair") })
 
-const controle = document.querySelectorAll(".controle-ajuste")
-console.log(controle)
+
 
 
 
